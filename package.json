@@ -1,0 +1,17 @@
+{
+	"name": "jmlt-marp-theme",
+	"version": "1.0.0",
+	"scripts": {
+		"dev:css": "sass themes/:themes/ --watch",
+		"build:css": "sass themes/:themes/"
+	},
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.3",
+    "sass": "^1.90.0"
+  },
+	"marp": {
+		"themeSet": "./themes",
+		"html": true,
+		"allowLocalFiles": true
+	}
+}
