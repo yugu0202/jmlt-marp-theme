@@ -7,15 +7,13 @@
 	},
 	"devDependencies": {
 		"@marp-team/marp-cli": "^4.2.3",
+		"markdown-it-attrs": "^4.3.1",
+		"markdown-it-container": "^4.0.0",
+		"markdown-it-mark": "^4.0.0",
 		"onchange": "^7.1.0",
 		"postcss-cli": "^11.0.1",
 		"postcss-inline-svg": "^6.0.0",
 		"postcss-svgo": "^7.1.0",
 		"sass": "^1.90.0"
-	},
-	"marp": {
-		"themeSet": "./themes",
-		"html": true,
-		"allowLocalFiles": true
 	}
 }
