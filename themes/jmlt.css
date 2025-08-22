@@ -1,2 +1,62 @@
+@charset "UTF-8";
 /* @theme jmlt */
 @import-theme "default";
+/*
+======================
+スライドレイアウト設定
+======================
+*/
+/* デフォルトレイアウト */
+section {
+  --main-text-color: #000;
+  --padding-spacing: 0.5rem;
+  --margin-left-spacing: 2rem;
+  color: var(--main-text-color);
+  padding: var(--padding-spacing);
+}
+section h1 {
+  color: #fff;
+}
+section h1 ~ * {
+  margin-left: var(--margin-left-spacing);
+}
+
+section.title {
+  --main-text-color: #fff;
+  color: var(--main-text-color);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.section_header {
+  --main-text-color: #fff;
+  color: var(--main-text-color);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.toc {
+  --main-text-color: #fff;
+  color: var(--main-text-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+section.toc h1 {
+  color: #000;
+}
+
+/*
+==================
+汎用設定
+==================
+*/
+/* 本来ならmarkで色が付くがmarkdown-it-markとmarkdown-it-attrsの組み合わせで使う目的のためmarkで色がつかないようにする */
+mark {
+  color: inherit;
+  background-color: inherit;
+}

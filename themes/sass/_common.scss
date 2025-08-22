@@ -1,0 +1,11 @@
+/*
+==================
+汎用設定
+==================
+*/
+
+/* 本来ならmarkで色が付くがmarkdown-it-markとmarkdown-it-attrsの組み合わせで使う目的のためmarkで色がつかないようにする */
+mark {
+	color: inherit;
+	background-color: inherit;
+}

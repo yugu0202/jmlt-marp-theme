@@ -1,3 +1,9 @@
-/* @theme jmlt */
 
-@import-theme "default";
+// marpテーマに必要な記述をインポート
+@use "sass/marp_settings";
+
+// スライドのレイアウトをインポート
+@use "sass/layouts";
+
+// スライドの共通設定をインポート
+@use "sass/common";

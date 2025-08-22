@@ -1,0 +1,62 @@
+/*
+======================
+スライドレイアウト設定
+======================
+*/
+
+/* デフォルトレイアウト */
+section {
+	--main-text-color: #000;
+	--padding-spacing: 0.5rem;
+	--margin-left-spacing: 2rem;
+
+	color: var(--main-text-color);
+	//background-image: svg-load('images/slide_bg.svg');
+	padding: var(--padding-spacing);
+
+	h1 {
+		color: #fff;
+	}
+
+	h1 ~ * {
+		margin-left: var(--margin-left-spacing);
+	}
+}
+
+section.title {
+	--main-text-color: #fff;
+
+	//background-image: svg-load('images/title_bg.svg');
+	color: var(--main-text-color);
+	
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.section_header {
+	--main-text-color: #fff;
+
+	//background-image: svg-load('images/section_header_bg.svg');
+	color: var(--main-text-color);
+
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.toc {
+	--main-text-color: #fff;
+
+	//background-image: svg-load('images/toc_bg.svg');
+	color: var(--main-text-color);
+	h1 {
+		color: #000;
+	}
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	place-items: center;
+}
