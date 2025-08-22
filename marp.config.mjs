@@ -53,7 +53,7 @@ export default {
 						return `<div ${attrsHtml}>\n`;
 					}
 
-					return "</div>\n"
+					return '</div>\n';
 				},
 			}
 		);
