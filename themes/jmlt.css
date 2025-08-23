@@ -9,29 +9,47 @@
 /* デフォルトレイアウト */
 section {
   --main-text-color: #000;
-  --padding-spacing: 0.5rem;
+  --padding-spacing: 1rem;
   --margin-left-spacing: 2rem;
   color: var(--main-text-color);
+  background-image: url("./themes/assets/slide_bg.svg");
+  background-color: gray;
   padding: var(--padding-spacing);
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
 }
 section h1 {
+  padding-top: 1.5rem;
   color: #fff;
+  backdrop-filter: contrast(50%);
 }
 section h1 ~ * {
+  margin-top: 1.5rem;
   margin-left: var(--margin-left-spacing);
 }
 
 section.title {
   --main-text-color: #fff;
+  background-image: url("./themes/assets/title_bg.jpg");
+  background-size: cover;
   color: var(--main-text-color);
+  font-size: 3rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
+section.title * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  backdrop-filter: contrast(50%);
+}
 
 section.section_header {
   --main-text-color: #fff;
+  background-image: url("./themes/assets/section_header_bg.jpg");
+  background-size: cover;
   color: var(--main-text-color);
   display: flex;
   flex-flow: column;
@@ -41,6 +59,7 @@ section.section_header {
 
 section.toc {
   --main-text-color: #fff;
+  background-image: url("./themes/assets/toc_bg.svg");
   color: var(--main-text-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -48,6 +67,10 @@ section.toc {
 }
 section.toc h1 {
   color: #000;
+}
+section.toc h1 ~ * {
+  padding: 1rem;
+  backdrop-filter: contrast(50%);
 }
 
 /*
